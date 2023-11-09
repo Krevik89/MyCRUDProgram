@@ -2,19 +2,22 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ImageBrush x:Key="closered" ImageSource="/images/exit_off_button.png"/>
-    <ImageBrush x:Key="close" ImageSource="/images/window_off_button_is_enabled.png" />
+    <ImageBrush x:Key="close"    ImageSource="/images/window_off_button_is_enabled.png" />
 
-    <ImageBrush x:Key="collapse" ImageSource="/images/window_collapse_button.png"/>
+    <ImageBrush x:Key="collapse"  ImageSource="/images/window_collapse_button.png"/>
     <ImageBrush x:Key="collapsed" ImageSource="/images/window_collapse_is_enabled_button.png"/>
     
-    <ImageBrush x:Key="fullscreen" ImageSource="/images/widow_fullscreen_button.png"/>
+    <ImageBrush x:Key="fullscreen"   ImageSource="/images/widow_fullscreen_button.png"/>
     <ImageBrush x:Key="fullscreened" ImageSource="/images/window_fullscreen_mini_button.png"/>
+
+    <ImageBrush x:Key="add"   ImageSource="/images/window_add_button.png" />
+    <ImageBrush x:Key="added" ImageSource="/images/window_add_is_enabled_button.png"/>
     
 
     <!--#region  CLOSE BUTTON-->
     <Style x:Key="ButtonCloseStyle" TargetType="{x:Type Button}">
-        <Setter Property="Height" Value="20"/>
-        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="48"/>
+        <Setter Property="Width" Value="48"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="2"/>
@@ -40,8 +43,8 @@
     
     <!--#region  COLLAPSE BUTTON-->
     <Style x:Key="ButtonCollapseStyle" TargetType="{x:Type Button}">
-        <Setter Property="Height" Value="20"/>
-        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Width" Value="40"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="2"/>
@@ -67,8 +70,8 @@
 
     <!--#region  FULLSCREEN BUTTON-->
     <Style x:Key="ButtonFullScreenStyle" TargetType="{x:Type Button}">
-        <Setter Property="Height" Value="20"/>
-        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="Width" Value="35"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="2"/>
@@ -84,6 +87,33 @@
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="Background" TargetName="border" Value="{StaticResource fullscreened}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region  ADD BUTTON-->
+    <Style x:Key="ButtonAddStyle" TargetType="{x:Type Button}">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border"
+                           BorderThickness="0"
+                           Background="{StaticResource add}"                           
+                            MinWidth="40"
+                            MinHeight="40"/>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource added}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource added}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
