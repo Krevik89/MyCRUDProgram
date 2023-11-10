@@ -43,12 +43,12 @@ namespace MyCRUDProgram
             if (WindowState == WindowState.Normal)
             {
                 WindowState = WindowState.Maximized;               
-                Button1.Height = 80;
-                Button1.Width = 80;
+                //Button1.Height = 80;
+                //Button1.Width = 80;
                 Button2.Height = 80;
                 Button2.Width = 80;
-                Button3.Height = 80;
-                Button3.Width = 80;              
+                DeleteButton.Height = 90;
+                DeleteButton.Width = 90;              
                 ButtonCollapse.Height = 80;
                 ButtonCollapse.Width = 80;
                 ButtonFullscreen.Height = 70;
@@ -64,8 +64,8 @@ namespace MyCRUDProgram
                 Button1.Width = 40;
                 Button2.Height = 40;
                 Button2.Width = 40;
-                Button3.Height = 40;
-                Button3.Width = 40;                
+                DeleteButton.Height = 40;
+                DeleteButton.Width = 40;                
                 ButtonCollapse.Height = 40;
                 ButtonCollapse.Width = 40;
                 ButtonFullscreen.Height = 40;

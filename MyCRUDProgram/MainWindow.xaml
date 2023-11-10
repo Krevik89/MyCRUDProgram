@@ -94,9 +94,9 @@
                         Style="{StaticResource ButtonAddStyle}"/>
                 <Button  
                         Grid.Column="2"
-                        x:Name="Button3"
+                        x:Name="DeleteButton"
                         Cursor="Hand"
-                        Style="{StaticResource ButtonAddStyle}"/>
+                        Style="{StaticResource ButtonDeleteStyle}"/>
             </Grid>
 
             <Grid Grid.Row="0" Grid.ColumnSpan="2">
