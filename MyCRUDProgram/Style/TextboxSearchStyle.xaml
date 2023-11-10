@@ -39,9 +39,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    <!--#endregion-->
-
-
     </Style>
-
+    <!--#endregion-->
 </ResourceDictionary>

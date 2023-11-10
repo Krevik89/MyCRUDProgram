@@ -33,10 +33,10 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*"/>
-                <ColumnDefinition Width="130*"/>
-                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
                 <ColumnDefinition Width="140*"/>
-                <ColumnDefinition Width="130*"/>
+                <ColumnDefinition Width="120*"/>
                 <ColumnDefinition Width="70*"/>
                 <ColumnDefinition Width="130*"/>
             </Grid.ColumnDefinitions>
@@ -103,7 +103,10 @@
                 <TextBox x:Name="TBoxSearch"
                            Style="{StaticResource TextBoxSearchStyle}"
                          Margin="10 0 0 2"/>
-                <Image x:Name="searchImage" Style="{StaticResource IconSearchStyle}" />
+                <Image Grid.Row="0"
+                       Grid.Column="0"
+                       x:Name="searchImage"
+                       Style="{StaticResource IconSearchStyle}"/>
             </Grid>
         </Grid>
     </Grid>

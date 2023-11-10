@@ -48,8 +48,7 @@ namespace MyCRUDProgram
                 Button2.Height = 80;
                 Button2.Width = 80;
                 Button3.Height = 80;
-                Button3.Width = 80;
-                searchImage.Margin= new Thickness(15, 37, 0, 0);
+                Button3.Width = 80;              
                 ButtonCollapse.Height = 80;
                 ButtonCollapse.Width = 80;
                 ButtonFullscreen.Height = 70;
@@ -66,8 +65,7 @@ namespace MyCRUDProgram
                 Button2.Height = 40;
                 Button2.Width = 40;
                 Button3.Height = 40;
-                Button3.Width = 40;
-                searchImage.Margin = new Thickness(15, 11, 0, 0);
+                Button3.Width = 40;                
                 ButtonCollapse.Height = 40;
                 ButtonCollapse.Width = 40;
                 ButtonFullscreen.Height = 40;

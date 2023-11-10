@@ -5,9 +5,9 @@
         <Setter Property="Source" Value="/Images/Icon_search2.jpg"/>
         <Setter Property="Height" Value="30"/>
         <Setter Property="Width" Value="30"/>
-        <Setter Property="Margin" Value="15 11 0 0"/>
+        <Setter Property="Margin" Value="15 1 0 0"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
     <!--#endregion-->
 
