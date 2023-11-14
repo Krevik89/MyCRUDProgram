@@ -207,6 +207,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Style\ListboxStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style\TextboxSearchStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -259,6 +263,13 @@
   <ItemGroup>
     <Resource Include="Images\close_button.png" />
     <Resource Include="Images\close_enabled_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\update_button.png" />
+    <Resource Include="Images\update_enabled_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_logotype.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

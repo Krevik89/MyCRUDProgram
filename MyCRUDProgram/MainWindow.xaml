@@ -24,8 +24,8 @@
 
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="250*"/>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="230*"/>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
             </Grid.RowDefinitions>
@@ -36,9 +36,12 @@
                 <ColumnDefinition Width="120*"/>
                 <ColumnDefinition Width="140*"/>
                 <ColumnDefinition Width="120*"/>
-                <ColumnDefinition Width="70*"/>
-                <ColumnDefinition Width="130*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="100*"/>
             </Grid.ColumnDefinitions>
+
+            <ListBox x:Name="database" Grid.Column="2" Style="{StaticResource ListBoxStyle}" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            <ListBox x:Name="datatable" Grid.Column="4" Style="{StaticResource ListBoxStyle}" d:ItemsSource="{d:SampleData ItemCount=5}"/>
 
             <Rectangle x:Name="rect" Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="0" Grid.RowSpan="5"          
                        Fill="Transparent"
@@ -55,7 +58,7 @@
                     Style="{StaticResource ButtonCloseStyle}"                  
                     Click="ButtonClose_Click"/>
             </Grid>
-            
+
             <Grid Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -63,14 +66,14 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Button 
-                        x:Name="Button1"
+                        x:Name="AddButton"
                         Cursor="Hand"
                         Style="{StaticResource ButtonAddStyle}"/>
                 <Button  
                         Grid.Column="1"
-                        x:Name="Button2"
+                        x:Name="UpdateButton"
                         Cursor="Hand"
-                        Style="{StaticResource ButtonAddStyle}"/>
+                        Style="{StaticResource ButtonUpdateStyle}"/>
                 <Button  
                         Grid.Column="2"
                         x:Name="DeleteButton"
@@ -87,6 +90,13 @@
                        x:Name="searchImage"
                        Style="{StaticResource IconSearchStyle}"/>
             </Grid>
+
+            <Image Grid.Column="3" Style="{StaticResource IconLogotypeStyle}"/>
+
+            <DataGrid x:Name="View"
+                      Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"
+                      BorderBrush="Black" BorderThickness="3"
+                      Opacity="0.2" Background="Transparent" HeadersVisibility="Column" />
         </Grid>
     </Grid>
 </Window>
