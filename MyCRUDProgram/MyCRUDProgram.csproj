@@ -246,9 +246,6 @@
     <Resource Include="Images\window_off_button_is_enabled.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\widow_fullscreen_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\window_add_button.png" />
     <Resource Include="Images\window_add_is_enabled_button.png" />
   </ItemGroup>
@@ -257,6 +254,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Icon_search2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_button_delete.png" />
+    <Resource Include="Images\icon_button_delete_is_enabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close_button.png" />
+    <Resource Include="Images\close_enabled_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
