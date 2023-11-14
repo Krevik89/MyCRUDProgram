@@ -240,9 +240,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\exit_off_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\window_off_button_is_enabled.png" />
   </ItemGroup>
   <ItemGroup>
