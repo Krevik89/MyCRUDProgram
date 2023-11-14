@@ -13,7 +13,6 @@
     <ImageBrush x:Key="add"   ImageSource="/images/window_add_button.png" />
     <ImageBrush x:Key="added" ImageSource="/images/window_add_is_enabled_button.png"/>
     
-
     <!--#region  CLOSE BUTTON-->
     <Style x:Key="ButtonCloseStyle" TargetType="{x:Type Button}">
         <Setter Property="Height" Value="48"/>
@@ -33,60 +32,6 @@
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
                             <Setter Property="Background" TargetName="border" Value="{StaticResource close}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <!--#endregion-->
-    
-    <!--#region  COLLAPSE BUTTON-->
-    <Style x:Key="ButtonCollapseStyle" TargetType="{x:Type Button}">
-        <Setter Property="Height" Value="40"/>
-        <Setter Property="Width" Value="40"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="Margin" Value="2"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border x:Name="border"
-                        BorderThickness="0"
-                        Background="{StaticResource collapsed}"/>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource collapse}"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource collapsed}"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <!--#endregion-->
-
-    <!--#region  FULLSCREEN BUTTON-->
-    <Style x:Key="ButtonFullScreenStyle" TargetType="{x:Type Button}">
-        <Setter Property="Height" Value="35"/>
-        <Setter Property="Width" Value="35"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="Margin" Value="2"/>
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Button}">
-                    <Border x:Name="border"
-                     BorderThickness="0"
-                     Background="{StaticResource fullscreen}"/>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource fullscreened}"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource fullscreened}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

@@ -28,7 +28,6 @@
                 <RowDefinition Height="250*"/>
                 <RowDefinition Height="50*"/>
                 <RowDefinition Height="50*"/>
-                
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -48,29 +47,9 @@
                        MouseMove="Rectangle_MouseMove" Margin="0,0,0,1">
             </Rectangle>
 
-            <Grid Grid.Column="6" VerticalAlignment="Top" HorizontalAlignment="Right"  >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Button                    
-                    Grid.Column="0"
-                    x:Name="ButtonCollapse"
-                    Cursor="Hand"
-                    Style="{StaticResource ButtonCollapseStyle}"                  
-                    Click="ButtonCollapse_Click"/>
+            <Grid Grid.Column="6" VerticalAlignment="Top" HorizontalAlignment="Right">
                 <Button 
-                    Grid.Column="1"                  
-                    x:Name="ButtonFullscreen"
-                    Cursor="Hand"
-                    Style="{StaticResource ButtonFullScreenStyle}"
-                    Height="35"
-                    Width="35"
-                    Click="ButtonFullscreen_Click"/>
-                <Button 
-                    Grid.Column="2"
-                    Margin="-5,4,2,2"
+                    Grid.Column="2"                   
                     x:Name="ButtonClose"
                     Cursor="Hand"
                     Style="{StaticResource ButtonCloseStyle}"                  

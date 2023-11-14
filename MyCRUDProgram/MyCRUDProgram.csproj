@@ -249,29 +249,11 @@
     <Resource Include="Images\widow_fullscreen_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\window_collapse_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\window_fullscreen_mini_button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\window_collapse_is_enabled_button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\window_add_button.png" />
     <Resource Include="Images\window_add_is_enabled_button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\search.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\window_search_textbox.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Icon_search.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Icon_search1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Icon_search2.jpg" />
