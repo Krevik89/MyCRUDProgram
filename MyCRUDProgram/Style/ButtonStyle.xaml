@@ -4,12 +4,6 @@
     <ImageBrush x:Key="closered" ImageSource="/images/exit_off_button.png"/>
     <ImageBrush x:Key="close"    ImageSource="/images/window_off_button_is_enabled.png" />
 
-    <ImageBrush x:Key="collapse"  ImageSource="/images/window_collapse_button.png"/>
-    <ImageBrush x:Key="collapsed" ImageSource="/images/window_collapse_is_enabled_button.png"/>
-    
-    <ImageBrush x:Key="fullscreen"   ImageSource="/images/widow_fullscreen_button.png"/>
-    <ImageBrush x:Key="fullscreened" ImageSource="/images/window_fullscreen_mini_button.png"/>
-
     <ImageBrush x:Key="add"   ImageSource="/images/window_add_button.png" />
     <ImageBrush x:Key="added" ImageSource="/images/window_add_is_enabled_button.png"/>
     
